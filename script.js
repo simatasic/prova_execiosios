@@ -1,14 +1,14 @@
 const questions = [
   // <h2>Decomposição</h2>
-  { q: "O número 47 tem: ___ dezenas e ___ unidades.", a: ["4", "7"] },
-  { q: "O número 83 tem: ___ dezenas e ___ unidades.", a: ["8", "3"] },
-  { q: "O número 29 tem: ___ dezenas e ___ unidades.", a: ["2", "9"] },
   { q: "O número 56 tem: ___ dezenas e ___ unidades.", a: ["5", "6"] },
+  { q: "O número 79 tem: ___ dezenas e ___ unidades.", a: ["7", "9"] },
+  { q: "O número 21 tem: ___ dezenas e ___ unidades.", a: ["2", "1"] },
+  { q: "O número 4 tem: ___ dezenas e ___ unidades.", a: ["0", "4"] },
   { q: "O número 90 tem: ___ dezenas e ___ unidades.", a: ["9", "0"] },
-  { q: "O número 12 tem: ___ dezena e ___ unidades.", a: ["1", "2"] },
-  { q: "O número 74 tem: ___ dezenas e ___ unidades.", a: ["7", "4"] },
-  { q: "O número 38 tem: ___ dezenas e ___ unidades.", a: ["3", "8"] },
-  { q: "O número 65 tem: ___ dezenas e ___ unidades.", a: ["6", "5"] },
+  { q: "O número 17 tem: ___ dezena e ___ unidades.", a: ["1", "7"] },
+  { q: "O número 64 tem: ___ dezenas e ___ unidades.", a: ["6", "4"] },
+  { q: "O número 89 tem: ___ dezenas e ___ unidades.", a: ["8", "9"] },
+  { q: "O número 35 tem: ___ dezenas e ___ unidades.", a: ["3", "5"] },
   { q: "O número 99 tem: ___ dezenas e ___ unidades.", a: ["9", "9"] },
 
   // Dezena / meia dezena / dúzia
@@ -21,36 +21,36 @@ const questions = [
   { q: "2 dúzias de ovos são ___ ovos.", a: ["24"] },
   { q: "Meia dúzia de maçãs são ___ maçãs.", a: ["6"] },
   { q: "4 dezenas de lápis são ___ lápis.", a: ["40"] },
-  { q: "5 meias dúzias de chocolates são ___ chocolates.", a: ["30"] },
+  { q: "2 meias dúzias de chocolates são ___ chocolates.", a: ["12"] },
 
   // Adição e subtração até 20
-  { q: "João tinha 7 balas e ganhou mais 5. Agora tem ___ balas.", a: ["12"] },
+  { q: "João tinha 6 balas e ganhou mais 7. Agora tem ___ balas.", a: ["13"] },
   {
-    q: "Maria tinha 15 figurinhas e deu 6. Ficou com ___ figurinhas.",
+    q: "Maria tinha 15 figurinhas e deu 8. Ficou com ___ figurinhas.",
     a: ["9"],
   },
   {
-    q: "Pedro tinha 8 carrinhos e ganhou mais 9. Agora tem ___ carrinhos.",
-    a: ["17"],
+    q: "Pedro tinha 5 carrinhos e ganhou mais 9. Agora tem ___ carrinhos.",
+    a: ["14"],
   },
-  { q: "Ana tinha 20 pirulitos e comeu 4. Sobrou ___ pirulitos.", a: ["16"] },
+  { q: "Ana tinha 16 pirulitos e comeu 9. Sobrou ___ pirulitos.", a: ["7"] },
   { q: "Lucas tinha 10 bolas e perdeu 3. Ficou com ___ bolas.", a: ["7"] },
   {
-    q: "Carla tinha 5 bonecas e ganhou mais 7. Agora tem ___ bonecas.",
-    a: ["12"],
+    q: "Carla tinha 5 bonecas e ganhou dobro de ele tinha. Agora tem ___ bonecas.",
+    a: ["15"],
   },
   {
-    q: "Paulo tinha 18 figurinhas e perdeu 2. Ficou com ___ figurinhas.",
-    a: ["16"],
+    q: "Paulo tinha 18 figurinhas e perdeu metade. Ficou com ___ figurinhas.",
+    a: ["9"],
   },
   {
-    q: "Sofia tinha 9 livros e ganhou mais 6. Agora tem ___ livros.",
+    q: "Sofia tinha 9 livros e ganhou mais meia dúzia. Agora tem ___ livros.",
     a: ["15"],
   },
   { q: "Tiago tinha 14 carrinhos e deu 5. Ficou com ___ carrinhos.", a: ["9"] },
   {
-    q: "Laura tinha 11 balas e ganhou mais 8. Agora tem ___ balas.",
-    a: ["19"],
+    q: "Laura tinha 9 balas e ganhou mais 4. Agora tem ___ balas.",
+    a: ["13"],
   },
 
   // Dobro e metade
@@ -96,6 +96,7 @@ function checkAnswers() {
       }
     });
   });
+
   document.getElementById("score").innerText =
-    `Você acertou ${score} de ${questions.reduce((sum, q) => sum + q.a.length, 0)} respostas!`;
+    `Parabéns você acertou ${score} de ${questions.reduce((sum, q) => sum + q.a.length, 0)} respostas!`;
 }
